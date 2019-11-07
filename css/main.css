@@ -135,3 +135,64 @@ header{
 footer, footer a{
     color:#393939;
 }
+
+.barra-footer{
+    color:#fff;
+    background-color: #103050;
+    text-align: center;
+    padding:.5rem;
+    margin-top:1rem;
+}
+.barra-footer p{
+    margin:0;
+}
+
+.funcionamiento{
+    padding:90px 0;
+}
+.funcionamiento img, .img-info{
+    max-width:100px;
+    display: block;
+    margin: 1rem auto;
+}
+
+.t-green{
+    color:#fff;
+    font-weight: bold;
+    background-color: var(--color-secundario);
+    border-radius: 14px;
+    padding: .8rem 2rem;
+    width: fit-content;
+    -webkit-width: -web-fit-content;
+    margin-bottom: 2rem;
+}
+.box-req{
+    border-radius: 20px;
+    border:2px solid var(--color-principal);
+    padding:2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.box-req h3{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.datos-req{
+    display: none;
+}
+
+
+
+.testimonios{
+    background: linear-gradient(90deg,#27AEEB, #0658A7);
+
+    color:#fff
+}
+.testimoniales .col-md-6:first-of-type{
+    padding: 60px 40px 0;
+}
+.testimoniales .col-md-6:first-of-type h3{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
