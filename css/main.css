@@ -130,3 +130,8 @@ header{
     background:linear-gradient(var(--color-principal), rgb(4, 50, 97));
     color:#fff;
 }
+
+
+footer, footer a{
+    color:#393939;
+}
