@@ -1,0 +1,132 @@
+html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --color-principal: #00509F;
+    --color-secundario: #00A74B;
+}
+
+
+header{
+    background: #fff;
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1344px;
+    }
+}
+.nav-principal{
+    padding: 8px 0;
+}
+.nav-principal img{
+    max-width: 200px;
+}
+
+.nav-numb{
+    font-weight: bold;
+    color:var(--color-secundario)!important;
+    font-size: 1.3rem;
+}
+
+
+.banner-inicio{
+    background:linear-gradient(90deg,#43D92C,#3AEBBB);
+    padding: 50px 0;
+    color:#fff;
+}
+
+.banner-inicio h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+@media(min-width:1200px){
+    .banner-inicio h2{
+        font-size: 4.5rem;
+    }
+}
+
+
+.formulario-inicio{
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 1px 2px 10px 3px rgba(19, 114, 89, 0.445);
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.formulario-inicio h3{
+    padding:.5rem 0;
+    text-align: center;
+    background-color: var(--color-principal);
+    border-radius: 28px 28px 0 0;
+    margin-bottom: 1rem;
+}
+.form-prestamo{
+    color:#000;
+    padding:.5rem 1rem;
+}
+
+.form-prestamo .col-md-6{
+    margin-bottom:1rem;
+}
+
+.banner-inicio .slide-banner{
+    padding-top: 50px;
+}
+.banner-inicio .slide-banner p{
+    font-size: 2rem;
+}
+.contador{
+    position: relative;
+    width: 100%;
+}
+.botones{
+    background-color: var(--color-secundario);
+    position: absolute;
+    right:0;
+    top:0;
+    border-radius: 0 11px 11px 0;
+    display: flex;
+}
+.botones a{
+    font-size: 1.6rem;
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: sans-serif;
+}
+.botones a:last-of-type{
+    margin-top: -2px;
+}
+.form-prestamo input, .form-prestamo select{
+    border-radius: 11px;
+    border:1px solid var(--color-secundario);
+}
+.form-prestamo label{
+    display: block;
+    text-align: center;
+}
+.btn-datos{
+    padding: .5rem 3rem;
+    margin:0 auto;
+    border-radius: 50px!important;
+    display: block;
+    text-transform: uppercase;
+    background: var(--color-principal);
+    border: none!important;
+    margin-top: 1rem;
+    color:#fff;
+    transition: all .4s ease;
+}
+
+.btn-datos:hover{
+    background:linear-gradient(var(--color-principal), rgb(4, 50, 97));
+    color:#fff;
+}
