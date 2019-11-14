@@ -489,3 +489,88 @@ footer .row{
 .valores-inv p{
     padding:2.4rem 1.4rem 1rem;
 }
+
+
+
+
+
+
+/* Solicitud */ 
+
+.f-solicitud label{
+    text-align: left;
+    margin: 0 0 .3rem 0;
+    padding-left:.8rem;
+    font-size: .8rem;
+    color:#707070;
+}
+
+
+.paginacion-datos{
+    border-radius: 20px;
+    border:1px solid #f1f1f1;
+    padding:2rem;
+    text-align: center;
+}
+.paginacion-datos h3{
+    color:var(--color-secundario)
+}
+.paginacion-datos p{
+    color:#707070;
+    font-size: .8rem;
+}
+.paginacion-datos label{
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    color:var(--color-principal)
+}
+.paginacion-datos a:first-of-type{
+    max-width: fit-content;
+    margin: 1rem auto;
+}
+.paginacion-datos .form-group p{
+    text-align: left;
+    margin:5px 0;
+}
+
+.opciones{
+ display: flex;
+ flex:1 1 auto;
+}
+.opciones label{
+    display: block;
+    padding: .3rem 1.2rem;
+    color:#707070;
+    font-weight: normal;
+}
+
+.cuadros-propiedades label{
+    color:#707070;
+    font-size: .8rem;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+    padding:.8rem;
+    border:2px solid #fff;
+    transition: all .4 ease;
+    border-radius: 8px;
+}
+.cuadros-propiedades label img{
+    margin-bottom: .5rem;
+}
+.cuadros-propiedades input[type="radio"]{
+    display: none;
+}
+.cuadros-propiedades input[type="radio"]:checked + label{
+    border: 2px solid var(--color-secundario);
+    background-color: #F8F8F8;
+}
+
+
+.page{
+    display: none;
+}
+.act-page{
+    display: block;
+}

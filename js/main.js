@@ -10,7 +10,7 @@ $(document).ready(function(){
         
 
         if(e.target.classList.contains('c-suma')){
-            if(valor < 100000){
+            if(valor < 500000){
                 valor+=5000;
                 input.value=valor;
             }
@@ -35,9 +35,72 @@ $(document).ready(function(){
 
 
 
-
     /****************************/
-    
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            }
+        },
+        dots:true,
+        dotsEach:3
+    })
+
+
+
+
+    async function distritos(){
+        let conn = await fetch('includes/data/distritos.json');
+
+        let respuesta = await conn.json();
+
+        return respuesta;
+    }
+
+
+   
+        distritos()
+            .then(res=>{
+                let resultados = Object.values(res);
+                let revision=[];
+                resultados.forEach(bloque =>{
+                    bloque.forEach(distrito =>{
+                        
+                        if(distrito.etiqueta_ubigeo.indexOf(', Lima') > 0){
+
+                            revision.push(bloque)
+                        }
+                    })
+                    
+                })
+                const distritos = revision[0];
+                
+
+                const selec = document.querySelector('#ubicacion');
+                distritos.forEach(distrito =>{
+                    const opcion = document.createElement('option');
+                    opcion.value=distrito.codigo_ubigeo;
+                    opcion.innerText = distrito.nombre_ubigeo;
+
+                    selec.appendChild(opcion)
+                })
+            })
+   
+   
+
+    /* Paginancion*/
+
+    $('#next').on('click',()=>{
+        $('#page-1').addClass("animated fadeOutLeft")
+        $('#page-1').removeClass("act-page")
+        $('#page-2').addClass("act-page animated fadeInRight")
+    })
+
+
 
     $('.box-req').on('click',function(){
 
@@ -63,3 +126,4 @@ $(document).ready(function(){
           })
     })
 })
+

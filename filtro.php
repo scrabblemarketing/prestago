@@ -51,7 +51,7 @@
             <div class="col-md-8">
                 <form action="datos.php" class="form-solicitud" method="post">
                     <div class="paginacion-datos">
-                       <div class="page act-page" id="page-1">
+                       <div id="page-1">
                             <p class="seccion">Paso 1 a 2</p>
 
 
@@ -63,13 +63,22 @@
                                 <input type="text" name="dni" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="nombres">Nombres y Apellidos</label>
+                                <label for="nombres">Nombres</label>
                                 <input type="text" name="nombres" class="form-control">
                             </div>
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" class="form-control">
+                            </div>
+                            <h3>Datos de Contacto</h3>
 
                             <div class="form-group">
                                 <label for="telefono">Teléfono de contacto</label>
                                 <input type="text" name="telefono" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono-2">Otro teléfono de contacto <span>- Opcional</span></label>
+                                <input type="text" name="telefono-2" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="correo">Correo electrónico</label>
@@ -80,7 +89,7 @@
                        </div>
                         <!-- page-1  -->
 
-                       <div class="page" id="page-2">
+                       <div id="page-2">
                             <p class="seccion">Paso 2 a 2</p>
 
 
@@ -96,43 +105,15 @@
                             <div class="form-group">
                                 <label for="propiedad">Tipo de propiedad</label>
                                 <p>Seleccione una propiedad</p>
-                                <div class="row my-4 text-center cuadros-propiedades">
-                                    <div class="col-6 col-md-2">
-                                        <input type="radio" name="tipo_propiedad[]" id="casa" value="casa">
-                                        <label for="casa">
-                                            <img src="img/casa.png" alt="" class="img-fluid">
-                                            Casa
-                                        </label>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <input type="radio" name="tipo_propiedad[]" id="departamento" value="departamento">
-                                        <label for="departamento">
-                                            <img src="img/departamento.png" alt="" class="img-fluid">
-                                            Departamento
-                                        </label>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <input type="radio" name="tipo_propiedad[]" id="terreno" value="terreno">
-                                        <label for="terreno">
-                                            <img src="img/terreno.png" alt="" class="img-fluid">
-                                            Terreno
-                                        </label>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <input type="radio" name="tipo_propiedad[]" id="edificio" value="edificio">
-                                        <label for="edificio">
-                                            <img src="img/edificio.png" alt="" class="img-fluid">
-                                            Edificio
-                                        </label>
-                                    </div>
-                                    <div class="col-6 col-md-2">
-                                        <input type="radio" name="tipo_propiedad[]" id="negocio" value="negocio">
-                                        <label for="negocio">
-                                            <img src="img/tienda.png" alt="" class="img-fluid">
-                                            Negocio
-                                        </label>
+                                <div class="row">
+                                    <div class="col-2 col-md-5">
+                                        
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">Área total de la propiedad m<sup>2</sup></label>
+                                <input type="text" name="area" class="form-control">
                             </div>
 
                             <div class="form-group">
@@ -153,8 +134,22 @@
                                     <option value="otras">Otras personas</option>
                                 </select>
                             </div>
-                            
-                           
+                            <div class="form-group">
+                                <label for="telefono">¿Cuenta con un embargo vigente?</label>
+                                <div class="opciones">
+                                    <label for="op_si"><input type="radio" name="embargo" id="op_si" value="si"> Si</label>
+                                    <label for="op_no"><input type="radio" name="embargo" id="op_no" value="no"> No</label>
+                                    <label for="op_nose"><input type="radio" name="embargo" id="op_nose" value="nose"> No sé</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">¿Cuenta con una hipoteca vigente?</label>
+                                <div class="opciones">
+                                    <label for="op_si"><input type="radio" name="hipoteca" id="op_si" value="si"> Si</label>
+                                    <label for="op_no"><input type="radio" name="hipoteca" id="op_no" value="no"> No</label>
+                                    <label for="op_nose"><input type="radio" name="hipoteca" id="op_nose" value="nose"> No sé</label>
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <button type="button" class="btn btn-datos">Enviar Datos <i class="far fa-paper-plane"></i></button>

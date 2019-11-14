@@ -71,7 +71,7 @@
             <div class="col-md-4">
                 <img src="img/escudo.png" alt="" class="img-fluid">
                 <h3 class="text-center">INVERSIÓN SEGURA</h3>
-                <p class="text-center">Tu inversión está respaldada por una garantía hipotecaria inscrita a tu nombre en Registros Públicos.</p>
+                <p class="text-center">Tu inversión está respaldada por una garantía hipotecaria bajo un contrato inscrito a tu nombre en Registros Públicos.</p>
             </div>
             <div class="col-md-4">
                 <img src="img/apreton-de-manos (1).png" alt="" class="img-fluid">
@@ -80,7 +80,7 @@
             </div>
             <div class="col-md-4">
                 <img src="img/dinero (1).png" alt="" class="img-fluid">
-                <h3 class="text-center">RENTABILIDAD DEL 18%</h3>
+                <h3 class="text-center">RENTABILIDAD DEL 24%</h3>
                 <p class="text-center">Prestando directamente tus ahorros accederás a tasas de retorno atractivas.</p>
             </div>
         </div>
